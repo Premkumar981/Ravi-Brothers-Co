@@ -3,6 +3,9 @@ const app = express();
 
 app.use(express.static(__dirname+'/public'));
 
+app.get('/',(req,res)=>{
+    res.sendFile(__dirname+'/front.html');
+})
 app.get('/index.html',(req,res)=>{
     res.sendFile(__dirname+'/index.html');
 })
@@ -22,9 +25,7 @@ app.get('/login.html',(req,res)=>{
     res.sendFile(__dirname+'/login.html');
 })
 
-app.get('/front.html',(req,res)=>{
-    res.sendFile(__dirname+'/front.html');
-})
+
 app.get('/email.html',(req,res)=>{
     res.sendFile(__dirname+'/email.html');
 })

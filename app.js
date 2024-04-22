@@ -5,6 +5,7 @@ app.use(express.static(__dirname+'/public'));
 
 app.get('/',(req,res)=>{
     res.sendFile(__dirname+'/front.html');
+    // res.render("./public")
 })
 app.get('/index.html',(req,res)=>{
     res.sendFile(__dirname+'/index.html');

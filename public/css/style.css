@@ -62,6 +62,10 @@ header{
     color: #ee1c47;
 }
 
+.center{
+    text-align: center;
+}
+
 section{
     padding: 5% 10%;
 }
